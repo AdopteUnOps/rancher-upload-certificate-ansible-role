@@ -9,6 +9,10 @@ Mandatory Variables
 ```
 common_name: "mydomain.com"
 certificate_folder: "{{ inventory_dir }}/certificates/{{rancher_project_name}}"
+rancher_api_key: "mykey"
+rancher_api_secret: "mysecret"
+rancher_project_name: "default"
+rancher_project_id: 1234
 ```
 
 Role Variables
@@ -26,7 +30,7 @@ certificate_file:  "{{certificate_folder}}/{{key_name}}.crt"
 ca_certificate_file:  "{{ inventory_dir }}/certificates/ca.crt"
 
 rancher_master_url: "http://localhost:8080"
-rancher_project_name: "default"
+
 ```
 License
 -------
