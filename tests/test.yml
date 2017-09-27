@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  remote_user: root
+  vars:
+    common_name: "mydomain.com"
+    certificate_folder: "{{ inventory_dir }}/certificates/{{rancher_project_name}}"
+  roles:
+    - rancher-upload-certificate-ansible-role

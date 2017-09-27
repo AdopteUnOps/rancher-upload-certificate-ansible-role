@@ -1,0 +1,8 @@
+rancher_cert_body:
+  type: certificate
+  name: "{{key_name}}"
+  key: "{{lookup('file',private_key_file)}}"
+  cert: "{{lookup('file',certificate_file)}}"
+  certChain: "{{lookup('file',ca_certificate_file) | default('') }}"
+
+temp_openssl_ext_conf: "/tmp/{{key_name}}-openssl-ext.conf"

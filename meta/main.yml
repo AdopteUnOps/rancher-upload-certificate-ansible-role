@@ -1,0 +1,14 @@
+galaxy_info:
+  author: AdopteUnOps
+  description: Upload certificate in a rancher environment
+  license: Apache
+
+  min_ansible_version: 2.2
+
+  platforms:
+   - name: Ubuntu
+
+  galaxy_tags:
+  - rancher
+  
+dependencies: []
