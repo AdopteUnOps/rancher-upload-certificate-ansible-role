@@ -1,0 +1,10 @@
+basicConstraints=critical,CA:true,pathlen:0
+
+{% for subAltName in subj_alt_names %}
+{% if loop.first %}
+subjectAltName = @alt_names
+
+[alt_names]
+{% endif %}
+DNS.{{loop.index}} = {{subAltName}}
+{% endfor %}
