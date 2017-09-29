@@ -6,6 +6,6 @@ days: 365
 private_key_file: "{{certificate_folder}}/{{key_name}}.key"
 csr_file: "{{certificate_folder}}/{{key_name}}.csr"
 certificate_file:  "{{certificate_folder}}/{{key_name}}.crt"
-ca_certificate_file:  "{{ inventory_dir }}/certificates/ca.crt"
+ca_certificate_file:  "ca.crt"
 
 rancher_master_url: "http://localhost:8080"
