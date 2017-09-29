@@ -8,6 +8,7 @@ Mandatory Variables
 
 ```
 common_name: "mydomain.com"
+key_name: "mycert"
 certificate_folder: "{{ inventory_dir }}/certificates/{{rancher_project_name}}"
 rancher_api_key: "mykey"
 rancher_api_secret: "mysecret"
